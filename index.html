@@ -4,8 +4,47 @@
 	<title>О великое портфолио</title>
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="icon" href="https://img.icons8.com/?size=100&id=JidXFhp4X9De&format=png&color=EEEEEE" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MouseEvent</title>
+
+	<style>
+		body
+		{
+		height: 100%;
+		background-color: black;
+		}
+		div
+		{
+		width: fit-content;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 10em;
+		}
+		p
+		{
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 1.6em;
+		color: white;
+		text-align: center;
+		}
+	</style>
 </head>
 <body>
-	<h1>Я просыпаюсь в холодном поту, я просыпаюсь в кошмарном бреду.</h1>
+	<div>
+		<img src="https://phoneky.co.uk/thumbs/wallpapers/p2ls/anime/36/s7lop59912704327.jpg" >
+		<p id="text">i'll show you the power of uchiha</p>
+	</div>
+	<script>
+		const input = document;
+		const log = document.getElementById('text');
+		var count=0;
+		input.addEventListener('mousemove', logKey);
+		function logKey(e)
+		{
+		count++;
+		log.textContent = count;
+		}
+	</script>
 </body>
 </html>
